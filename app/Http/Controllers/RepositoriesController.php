@@ -102,7 +102,7 @@ class RepositoriesController extends Controller
         //
     }
 
-    private function fetchLanguages()
+    function fetchLanguages()
     {
         $program_languages_url = 'https://gist.githubusercontent.com/calvinfroedge/defeb8fc6cdc0068e172/raw/7904b2504827f6f4883df0299a2bf51accbe9dab/languages.json';
         $languages = Cache::rememberForever('programming-languages', function () use ($program_languages_url) {
