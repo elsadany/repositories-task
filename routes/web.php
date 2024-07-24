@@ -14,5 +14,5 @@ use App\Http\Controllers\RepositoriesController;
 */
 
 Route::get('/',[RepositoriesController::class,'index']);
-Route::get('get-data',[RepositoriesController::class,'getData']);
+Route::post('get-data',[RepositoriesController::class,'getData'])->name('get-data');
 
